@@ -20,6 +20,9 @@ const viewRouter = require('./routes/viewRoutes');
 // Start express app
 const app = express();
 
+//Trus proxies
+app.enable('trust proxy');
+
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 // 1 - Global middlewares
